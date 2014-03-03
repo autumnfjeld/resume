@@ -1,0 +1,234 @@
+\documentclass[11pt]{res} % default is 10 pt
+\usepackage{paratype}
+ \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+%\setlength{\textheight}{9.5in} % increase text height to fit resume on 1 page
+\newsectionwidth{10pt}  % So the text is not indented under section headings
+\usepackage{anysize}
+\marginsize{.5in}{.8in}{.3in}{.3in} 
+\renewcommand{\labelitemi}{\tiny{$\diamond$}}      
+\usepackage[none]{hyphenat} 
+\sloppy
+\raggedright
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage{tabularx}
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \headheight 70pt
+% \headsep 10pt
+% \renewcommand{\headrulewidth}{0pt}
+%\fancyheadoffset [R] {50pt}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\definecolor{AutGreen}{HTML} {006400}
+\definecolor{DarkGray}{gray}{0.3}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\newcommand{\myrule} [3] []{
+    \begin{center}
+        \begin{tikzpicture}
+        % \hspace{-6pt}
+            \draw[#2-#3, thick, #1] (0,0) to (.9\linewidth,0);
+        \end{tikzpicture}
+    \end{center}
+}
+% formatting for header info
+\newcommand\details[1]{\vspace{-20pt}\color{AutGreen}\begin{center}#1\end{center}\vspace{-16pt}}
+
+% \rhead{{\color{AutGreen} \small Autumn Fjeld \\ autumn@nmutua.com} \\ \medskip \\{\color{AutGreen}\hrule }}
+\pagenumbering{empty}
+
+
+\begin{document} 
+\thispagestyle{empty}
+% \vspace{-70pt}
+ \name{ {\sc {\Large \color{AutGreen} {\sc Autumn Fjeld}}} \\[8pt]} % the \\[pt] adds a blank line after name
+
+% \vspace{-20pt}
+% \color{AutGreen} 
+% \address{ 878 Capp Street \\   San Francisco, CA 94110  } 
+% \address{ \hspace{34pt} 415-810-4344\\  autumn@nmutua.com }
+
+\begin{resume}
+\details{878 Capp Street - San Francisco, CA - 415-810-4344 - autumn@nmutua.com }
+% \vspace{-28pt}
+\details{  github.com/autumnfjeld - linkedin.com/in/autumnfjeld twitter.com/autaut}
+
+% \begin{table}[h]
+% \color{AutGreen}
+% \centering
+% 	\begin{tabular}{L{6cm} C{3cm} R{6cm}}
+% 	 % \hspace{-13pt} 878 Capp Street & {\Large {\sc Autumn Fjeld}}	&  415-810-4344 \\\
+% 	 % \hspace{-17pt} San Francisco								 & 							&  autumn@nmutua.com
+% 	  878 Capp Street \newline San Francisco,CA  \newline 415-810-4344 \newline autumn@nmutua.com
+% 	  & {\Large {\sc Autumn Fjeld}}	&  github: autumnfjeld \newline linkedin: autumnfjeld \newline twitter: autaut \newline skype: autinaustria
+% 	\end{tabular}
+% \end{table}
+
+
+\vspace{-20pt}
+\color{AutGreen}{  \myrule{o}{o} }
+\color{DarkGray}
+\vspace{-15pt}  
+\section{EDUCATION} 
+\vspace{4pt}
+ {\bf  Software Engineering Immersive} --Javascript \& Frameworks -- {\it Hack Reactor, San Francisco} -- 2014 \\
+% \hspace*{20pt} Javascript \& Frameworks  April 2014 \\
+ {\bf Ph.D. \& M.S.} -- Materials Science \& Engineering -- {\it University of California, Berkeley}  -- 2006 \\
+ {\bf B.S.} -- Chemical Engineering, {\it Magna Cum Laude} -- {\it Arizona State University } --  1997 \\
+% \hspace*{20pt} Chemical Engineering {\it Magna Cum Laude}   May 1997 
+
+ % {\bf Doctor of Philosophy -- University of California, Berkeley} \\
+% \hspace*{20pt} Materials Science \& Engineering  December 2006 \\
+% %\hspace*{20pt} {\sl Mathematical Modeling and Experimental Investigations of the Gas Fluxing of Aluminum} \\ 
+% {\bf Master of Science -- University of California, Berkeley } \\
+% \hspace*{20pt} Materials Science \& Engineering  May 2001 \\
+% %\hspace*{20pt} {\sl Macromolecular Stabilization of Supported Liquid Membranes} \\
+% {\bf Bachelor of Science -- Arizona State University } \\
+% \hspace*{20pt} Chemical Engineering {\it Magna Cum Laude}   May 1997 
+%-------------------------------------------------------------------------------------------
+% \section{SKILLS RELATED TO THISXYZ POSITION}  
+%
+%-------------------------------------------------------------------------------------------
+
+
+\section{TECHNICAL EXPERIENCE} 
+\vspace{4pt}
+
+{\bf WikiViz Project} \& 2014 \\
+Data visualiztion tool \\
+\begin{itemize} \itemsep -1pt 
+  \item Role \& tech stack
+  Showed interconnectedness of Wikipedia urls in WikiViz, visualization tool using semantic text analysis and d3 to display data.
+  \item Technical challenge: Coded xyz for abc project, a mobile application for connecting users with last minute. TODO: Success from big group project.
+  \item Project outcome
+\end{itemize}
+
+{\bf ToDo Unknowname Project}  \& 2014 \\
+\begin{itemize} \itemsep -1pt 
+  \item Role \& tech stack
+  \item Tech Challenge: Coded xyz for abc project, a mobile application for connecting users with last minute. TODO: Success from big group project.
+  \item Project Outcome
+\end{itemize}
+
+
+\vspace{4pt}
+{\bf Freelance Science Editor}  2010 - present\\
+Edited scientific manuscripts for non-native English speakers
+\begin{itemize} \itemsep -1pt 
+  \item Created www.science-edit.com to advertise my services. Brought in business by advertising in Austrian social media.
+  \item Edited scientific manuscripts for non-native English speakers, leading to publication in high profile scientific journals.
+  \item Contract work for American Journal Experts, a global editing service for scientists.
+\end{itemize}
+
+
+{\bf Business Development Engineer -- NUMECA International, San Francisco, CA} \\
+{\bf Engineering Support \& Business Development}
+November 2010 - July 2013
+\begin{itemize} \itemsep -1pt 
+	\item Worked with technical support team in a fast-paced, problem solving environment to deliever customer solutions in meshing, computation setup, and post-processing. 
+		\item Benchmarked a variety of engineering systems for potential customers on NUMECA's meshing and CFD tools leading to software sales. 
+		\item Drove improvement of Computational Fluid Dynamics (CFD) tools as an integral part of the feedback loop for identifying and troubleshooting software bugs, user-friendliness, and scientific accuracy issues. 
+	\item Mastered expertise in three CFD solvers, four meshing tools, and gained experience in CAD tools. 
+	\item Continually worked to improve technical documentation and marketing literature including user manuals, web site content, posters, and conference oriented information. Led major overhaul of webinar training materials and style of presentations.
+	\item Developed content for and delivered technical training webinars twice a month to NUMECA's user base.
+\end{itemize}
+%\newpage
+%
+\vspace{4pt}
+{\bf Post Doctoral Research -- University of Leoben, Austria} \\
+{\bf Simulation \& Modeling of Metallurgical Processes}
+June 2006 - November 2010
+   \begin{itemize} \itemsep -1pt  % reduce space between items
+\item Worked in partnership with Austrian industry, investigated casting processes through CFD modeling, with the primary aim of understanding how filling induced flow phenomena influences final casting material properties. 
+ \item Developed FLUENT model to capture key phenomena affecting the casting of a large dual-alloy rolling mill roll, including flow behavior during filling, remelting and solidification; developed user defined codes to expand the functionality of solver. 
+%\vspace{0.3in}
+\item Defined experimental investigations for our industry partner including cooling curve analyses, metallurgical sampling of the casting, filming of filling and pouring stream behavior, and tracking process temperatures.
+\item Correlated simulation results and industry observations, provided industrial partner with new insight into their casting process and recommended process improvements.    
+\item Modeled a horizontal spin casting process to gain understanding of how large body forces and rotation alter solidification behavior.   
+%\item Designed and meshed cad geometries with GAMBIT 
+\item Ran simple OpenFoam test models to determine feasibility of running VOF and solidification models in OpenFoam.  
+\item User defined functions in C???? to extended capabilities of native solver
+\item scheme scripts to automate post-processing
+\end{itemize}
+%
+{\bf Ph.D. -- University of California, Berkeley} \\
+{\bf Materials Science \& Engineering}
+June 2001 - June 2006 
+\begin{itemize} \itemsep -1pt 
+	\item Collaborated in a five year project with Alcoa, Inc. to optimize a molten aluminum purification process, with specific goals to reduce toxic chloride emissions and improve energy efficiency.
+	\item Developed and evaluated multiple CFD models of the aluminum purification process in an industrial stirred tank reactor using FLUENT, simulating two--phase flow interactions and gas injection through a rotating impeller shaft.
+	\item Assessed and compared mixing, residence time, and bubble distribution for different operating conditions and impeller configurations in each CFD model.
+	\item Carried out experimental investigations in an industrial purification unit at the Alcoa Technical Center with a novel bubble detection probe in molten aluminum; used experimental findings to validate and fine tune CFD model results.
+	\item Employed high speed photography and image analysis to investigate the reduction of particulate emissions in an industrial fluxing unit via laboratory simulation of bubble bursting and droplet splashing at the surface of a molten metal.
+	\item ToDo: Extensive use of matlab to compute lots of fun stuff.....
+%\item Utilized a variety of computational and data analysis tools: Femlab, FLUENT, Matlab, Mathematica, GAMBIT.
+\end{itemize}
+%
+{\bf M.S. -- University of California, Berkeley} \\
+{\bf Materials Science \& Engineering}
+July 1999 - June 2001
+\begin{itemize} \itemsep -1pt 
+	\item Researched and developed experimental thin films for supported liquid membranes with an
+application towards filtration of acetic acid.
+	\item Investigated processing techniques and properties of epoxy films applied to a membrane
+surface to seal liquid extractant into pores of supporting membrane.
+	\item Investigated novel layer-by-layer assembly of polyelectrolytes to be used as thin films
+encasing extractant in supported liquid membranes.
+\end{itemize}
+%
+\vspace{4pt}
+{\bf Process Engineer -- Dow Chemical Corporation, Freeport, TX} \\
+{\bf Process Engineering Department}
+September 1997 - June 1999
+\begin{itemize} \itemsep -1pt 
+	\item Led the Fluid Flow team in serving plant design needs, gathering process information, and applying software design tools.
+	\item Created equipment database for Process Engineering, providing the department with a single tool to electronically store and communicate information during the design phase of a project.
+	\item Served on core project team for grass roots chemical plant; designed plant equipment and worked on plant development. Completed air permit calculations for Canadian Government.
+\end{itemize}
+%
+%--------------------------------------------------------------------------------------
+%\section{TEACHING EXPERIENCE} 
+%---------------------------------------------------------------------------------  
+\section{SOFTWARE EXPERIENCE}  
+ \vspace{15pt}
+\begin{itemize}  \itemsep -1pt 
+	\item What to do with this section?  
+	\item FLUENT, GAMBIT, OpenFOAM, full line of NUMECA's CFD suites
+	\item Matlab, Mathematica,  C, Fortran, Scheme, Python  
+	\item Linux, Mac OSX, Windows   
+\end{itemize}  
+ 
+%--------------------------------------------------------------------------------
+\section{NOTABLE} 
+ \vspace{15pt}
+\begin{itemize}  \itemsep -1pt 
+	\item Proposal to Materials Center Leoben, a scientific research facility in Austria, accepted for a three year project for simulation of industrial scale horizontal spin casting process   
+	\item Grant written, awarded for computational resources at the Pittsburgh Supercomputing Center 
+	\item Outstanding Graduate Student Instructor Award at Berkeley
+	\item Recipient of Jane Lewis Fellowship at Berkeley
+%	\item Dow Chemical Outstanding Junior Award    
+	\item Founded weekly conversational German group in Leoben, Austria for German-learning foreigners
+	\item Strong volunteer history in math and science tutoring for elementary and high school students
+	\item Volunteer at Mission Graduates, mentoring disadvantaged students through college application process          
+	\item Founded science-edit.com, a proof-reading service for scientific texts                                       
+	\item Love to sew and create and make colorful clothes, bags, anything!
+\end{itemize} 
+%---------------------------------------------------------------------------------  
+
+%-------------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------------------- 
+%\section{REFERENCES}
+% \vspace{15pt}   
+%\begin{itemize} \itemsep 2pt  
+%		\item[] Prof. Andreas Ludwig, Simulation and Modeling of Metallurgical Processes, Montanuniversit\"at Leoben, Leoben, Austria,  andreas.ludwig@mu-leoben.at, \hspace{15pt} +43 3842-402-3100  
+%	\item[] Prof. James W. Evans, Materials Science and Mineral Engineering, U.C. Berkeley, Berkeley, CA 91720, vans@berkeley.edu, 510-642-3807 
+%	\item[] Dr. Corleen Chesonis, Alcoa Inc., Alcoa Technical Center, Alcoa Center, PA 15069,  \hspace{15pt} corleen.chesonis@alcoa.com, 724-337-4794  
+%	\item[] Dr. Jaime Kruzic, School of Mechanical, Industrial, and Manufacturing Engineering, Oregon State University,	Corvallis, OR 97331, kruzicj@engr.orst.edu, 541-737-7027
+%	\item[] Dr. Scott Beckman, Materials Science and Engineering, Iowa State University, Ames, IA 50011, sbeckman@iastate.edu, 515-294-1107                         
+%\end{itemize}
+%
+\end{resume}
+\end{document}

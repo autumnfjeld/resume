@@ -1,0 +1,136 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{cv/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-emerald}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Autumn Fjeld}{}
+% \address{San Francisco, CA}
+\mobile{(+1) 415-810-4344} 
+%%% Social
+\email{autumnfjeld@gmail.com}
+\homepage{autumnfjeld.com}
+\github{autumnfjeld}
+\linkedin{autumnfjeld}
+%%% Optionals
+% \position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
+\position{Software Engineer{\enskip\cdotp\enskip}Web Developer}
+% \quote{Moving from San Francisco to Sydney in mid November 2017. \\ Seeking a creative and challenging front-end or full-stack web development role.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Letter Data (Cover Letter)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\recipient
+  {LoungeBuddy}
+  {}
+\letterdate{\today}
+\lettertitle{Application for Senior Web Engineer}
+% \letteropening{Dear Loungebuddies,}
+\letterclosing{Sincerely,}
+% \letterenclosure[Attached]{Curriculum Vitae}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Autumn Fjeld~~~·~~~Cover Letter}
+  {}
+
+\begin{document}
+
+%%% Make a header for CV using personal data
+\makecvheader
+
+%%% Make a title for Cover Letter using letter data
+\makelettertitle
+
+%%% Write content for your cover letter
+\begin{cvletter}
+\raggedright
+\vspace{-10pt}
+\cvparagraph{About Me}
+Hello! I am moving from San Francisco to Sydney in November 2017 and am starting my job search for a 
+% front-end or full stack 
+web development position at a company that fosters innovation, continual learning, and a collaborative work environment.  I lean towards the front-end side of web development and am happiest when turning code into visuals that create a happy, intuitive user experience. An ideal role for me would also include opportunities to work on all parts of a codebase.
+\vspace{6pt}
+\\
+I have close to four years web development experience and decades of analytic problem solving experience from my academic career in materials science and fluid dynamics. 
+My first development job was at a small chaotic start-up, one of four engineers building a hybrid mobile app and an enterprise website, with a fun, modern tech stack. I was quickly trusted to work independently, in all parts of codebase, and regularly implemented my own UI layouts.  After two happy years at this start-up, I decided I needed new challenges and a more structured team environment and I moved to a larger company and into a huge codebase with a complicated tech stack and a wonderfully structured agile/scrum team process.  I participate in design meetings with our Product Lead and design team, an excellent learning experience in how to design for the customer.  
+\vspace{6pt}
+% From these two jobs, spanning many years, I have experienced a range of working, coding, and learning styles among countless other wonderful things. \\
+\\
+I thrive on travel. I went to Cuba in May and loved the vibrant, colorful culture. Previous off-the-beaten path trips include NYE in the Republic of Georgia, a trip to Ghana and Togo to visit a friend in the Peace Core, and Nicaragua. I lived in Austria for over four years, learned German, and took every opportunity to explore Europe.  Now I'm fortunate enough to be relocating to a new part of the world and another adventure begins!
+%  I am an American citizen and have an Australian work visa (sponsored by UNSW where my husband was recently hired as an Assistant Professor), which my visa grant notice describes as: Class UC, subclass 457.
+
+% In my current role at a larger company I sit in on design meetings with our Product Lead and design team to absorb and contribute as much as possible.  
+
+\vspace{-3pt}
+\cvparagraph{Why LoungeBuddy?}
+I have been eyeing LoungeBuddy for some time, as it would be fabulous to code for a company that is all about travel. I am now in a position to reach out and learn more about LoungBuddy, and perhaps make what sounds like a potential dream job into a reality with my migration south. Tech-wise, my ideal position would be a return to Node and Angular, the tech stack I worked in a couple years ago, and which fits LoungeBuddy's needs.  I find both Node and Angular fun and intuitive.  
+\vspace{6pt}
+\\
+The fact that LoungeBuddy is based in my favorite city and my soon-to-be new home is a wonderful bonus. :)
+
+\vspace{-3pt}
+\cvparagraph{Why Me?}
+I am a thorough, logical coder and a creative problem solver---happy to think out of the box when there is a need for new architecture or UI design.  As a software developer who cares deeply about creating a great, customer-centric UI, I believe my goals are closely aligned with LoungeBuddy's standards and efforts for constant improvement.  My favorite part of web development is building a product consumed by people (in contrast to my academic research career which for me lacked a human element). I have a good eye for layout and for building features that are intuitive for a user.
+\vspace{6pt}
+\\
+% Anything I don’t know I can learn and hope I am always learning something new, a critical ingredient of a satisfying job.
+I love to learn and my academic background has trained me to put forth the extra effort to get to the end goal. I finally found a career I love---building products that delight people, and I know that enthusiasm comes through in my work. You can look me up at \href{http://autumnfjeld.com}{autumnfjeld.com}.
+
+
+
+\end{cvletter}
+
+%%% Make a closing for Cover Letter using letter data
+\makeletterclosing
+
+\end{document}

@@ -1,0 +1,209 @@
+\documentclass[11pt]{res} % default is 10 pt
+\usepackage{paratype}
+ \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+% \usepackage[T1]{fontenc}
+% \usepackage{lmodern}
+%\setlength{\textheight}{9.5in} % increase text height to fit resume on 1 page
+\newsectionwidth{10pt}  % So the text is not indented under section headings
+\usepackage{anysize}
+\marginsize{.7in}{1in}{.8in}{.5in}    %{left}{right}{top}{bottom}
+\renewcommand{\labelitemi}{\tiny{$\diamond$}}      
+\usepackage[none]{hyphenat} 
+\sloppy
+\raggedright
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage{tabularx}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\definecolor{AutGreen}{HTML} {006400}
+\definecolor{DarkGray}{gray}{0.3}
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \headheight 61pt
+% \headsep 10pt
+% \renewcommand{\headrulewidth}{0pt}
+% %\fancyheadoffset [R] {50pt}
+% \rfoot{{\small \color{AutGreen}Autumn Fjeld \\autumnfjeld@gmail.com} \\ \smallskip \\{\color{AutGreen}\hrule }}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\newcommand{\myrule} [3] []{
+    \begin{center}
+        \begin{tikzpicture}
+        \hspace{-6pt}
+            \draw[#2-#3, thick, #1] (0,0) to (\linewidth,0);
+        \end{tikzpicture}
+    \end{center}
+}
+% formatting for title info
+\newcommand\details[1]{\vspace{-21pt}\color{AutGreen}\begin{center}\small{#1}\end{center}\vspace{-14pt}}
+
+ %\rhead{{\color{AutGreen} \small Autumn Fjeld \\ autumnfjeld@gmail.com} \\ \medskip \\{\color{AutGreen}\hrule }}
+\pagenumbering{empty}
+
+
+\begin{document} 
+\thispagestyle{plain}
+\vspace{-50pt}
+ \name{ {\sc {\LARGE \color{AutGreen} {\sc Autumn Fjeld}}} \\[2pt]} % the \\[pt] adds a blank line after name
+
+% \vspace{-20pt}
+% \color{AutGreen} 
+% \address{ 878 Capp Street \\   San Francisco, CA 94110  } 
+% \address{ \hspace{34pt} 415-810-4344\\  autumn@nmutua.com }
+
+\begin{resume}
+\details{878 Capp Street - San Francisco, CA - 415-810-4344 - autumnfjeld@gmail.com }
+\vspace{2pt}
+\details{  github.com/autumnfjeld - linkedin.com/in/autumnfjeld - twitter.com/autaut }
+\vspace{-32pt}
+\color{AutGreen}{  \myrule{o}{o} }
+\color{DarkGray}
+\vspace{-10pt}  
+\section{EDUCATION} 
+\vspace{4pt}
+ \textbf{  Software Engineering Immersive} JavaScript \& Modern Frameworks \hfill {\it Hack Reactor, San Francisco} \\
+% \hspace*{20pt} Javascript \& Frameworks  April 2014 \\
+ \textbf{ Ph.D. \& M.S.} Materials Science \& Engineering   \hfill {\it University of California, Berkeley} \\
+ \textbf{ B.S.} Chemical Engineering, {\it Magna Cum Laude} \hfill {\it Arizona State University } 
+
+%-------------------------------------------------------------------------------------------
+% \vspace{-4pt}
+\section{LANGUAGES \& TECHNOLOGIES}
+\begin{itemize} \itemsep -1pt 
+  \item Experienced: JavaScript, HTML/CSS, AngularJS, Jasmine, Firebase, d3.js, Matlab, Bootstrap, Stylus, SASS, Backbone, jQuery, Adobe Illustrator, Jasmine, Node, Mongo, Unix scripting, {\fontfamily{}\selectfont \LaTeX }
+  \item Familiar:  PHP, Yii, Scheme, C, Express, Ionic, Cordova, Ruby, Sinatra, Protractor, Photoshop 
+\end{itemize}
+%
+%-------------------------------------------------------------------------------------------
+% \vspace{-8pt}
+\section{ EXPERIENCE} 
+\vspace{4pt}
+\textbf{TalentBin by Monster}  \hspace{6pt}  \textit {Software Engineer}  \hfill San Francisco, CA April 2016--Present \\
+\textit {Passive recruiting software}
+\vspace{2pt}
+\begin{itemize} \itemsep -1pt 
+  \item Working to phase out legacy code (PHP, Yii, YUI) and architect new code patterns with modern frameworks (Ractive, Backbone, Single Page Apps).
+  \item As a new team member, helping a growing team migrate from unstructured startup culture to a well-defined agile-scrum work process. Creating documentation, proactively recommend improvements in communication and tools (git, slack, zapier, etc.).
+  \item Co-supervising two computer science interns.
+\end{itemize}
+%
+\vspace{-6pt}
+\textbf{Ziploop}  \hspace{6pt}  \textit {Senior Front End Developer}                \hfill Orinda, CA 2014--April 2016 \\
+\textit {Mobile shopping organizer and retail portal for retailer to consumer rewards}
+\vspace{2pt}
+\begin{itemize} \itemsep -1pt 
+  \item Designed and implemented front-end features for mobile consumer app and two enterprise sites in AngularJS framework.  Worked closely with President to design UI/UX.
+  \item Collaborated with founding CTO to architect components, maintain build processes (grunt, gulp, git, unix scripts), choose frameworks, modules, and push to keep a clean, maintainable code base.
+  \item Pro-actively presented app design changes and modernizations that were routinely accepted.  
+  \item Refactored many parts of chaotic, legacy codebase to maintainability and sanity; solved load time problems for large list of images, optimizing quality and performance; continually strove for pixel perfect UI/UX.
+  \item Managed collaborations between lead developer and non-technical president, supervised two junior engineers and an assistant to develop her technical graphic design skills.
+\end{itemize}
+%
+\vspace{-6pt}
+\textbf{Plentyy}                    \hfill San Francisco, CA 2014 \\
+\textit {Mobile app that connects users to last-minute bargain deals with local merchants}
+\vspace{2pt}
+\begin{itemize} \itemsep -1pt 
+  \item Designed back-end schema in Firebase, chosen for Simplelogin authentication, direct database reference binding, and fast prototyping for MVP.
+  \item Built app in AngularJS architecture, ported to mobile with Cordova and styled with Ionic. Careful attention given to AngularJS controller and service modularity to create efficient team workflow.
+\end{itemize}
+%
+\vspace{-6pt}
+\textbf{WikiViz Project} \hfill San Francisco, CA 2014 \\
+\textit{Visualization tool of relationships between Wikipedia articles}
+\vspace{2pt}
+\begin{itemize} \itemsep -1pt 
+  \item Built a d3.js interactive force directed graph in an AngularJS directive, allowing users to click on a url-node to create an expansive node map of Wikipedia articles.
+  \item Built AngularJS components to communicate with back-end API, parse data into d3.js algorithms. 
+\end{itemize}
+%
+% \vspace{-10pt}
+% \textbf{Political Poke}      \hfill San Francisco, CA 2014 \\
+% \begin{itemize} \itemsep -1pt 
+%   \item Hackathon project built in AngularJS, user enters a politician's name to retrieve political campaign contribution data pulled from New York Times API. 
+% \end{itemize}
+
+%-------------------------------------------------------------------------------------------
+\vspace{-6pt}
+\section{TECHNICAL EXPERIENCE} 
+\vspace{4pt}
+\textbf{Technical Support Engineer -- NUMECA International} \hfill  San Francisco, CA 2010--2013\\
+\textit{ Engineering Support \& Business Development}
+\vspace{2pt}
+\begin{itemize} \itemsep -1pt 
+	\item Provided consulting support to engineers at Boeing, Honeywell, etc. on using NUMECA's computational fluid dynamics software tools, delivering solutions in meshing, solver setup, and post-processing. 
+	\item Improved software as an integral part of the feedback loop for identifying and troubleshooting software bugs, user-friendliness, and scientific accuracy issues.
+	\item Developed and delivered technical training webinars twice a month to NUMECA's user base. 
+\end{itemize}
+% \clearpage
+% \hspace{10pt}  %hack to force vspace to be recognized
+\vspace{10pt}\\
+\textbf{Freelance Science Editor}              \hfill Global 2010--2014\\
+\textit {Editor of scientific manuscripts for non-native English speakers}
+\vspace{2pt}
+\begin{itemize} \itemsep -1pt 
+  \item Edited scientific manuscripts for non-native English speakers leading to publication in high profile scientific journals, including work for American Journal Experts, a global editing service for scientists.
+    \item Built Joomla site to advertise my services. Brought in business by advertising on Austrian websites. 
+\end{itemize}
+%
+\vspace{-8pt}
+\textbf{Post Doctoral Research -- University of Leoben, Austria} \\
+\textit{Simulation \& Modeling of Metallurgical Processes} \hfill  Leoben, Austria 2006--2010
+\vspace{2pt}
+\begin{itemize} \itemsep -1pt  % reduce space between items
+\item Created a computational model of a large casting process to simulate flow and heat transfer phenomena for an Austrian steel making company.
+ \item Expanded functionality of commercial simulation software with user defined functions in C and data processing scripts in scheme.  Used Matlab extensively for data analysis. Tested feasibility of open source simulation framework, OpenFOAM.
+\item Defined experimental investigations for industry partner to get input and validation data for  simulations.
+\end{itemize}
+%
+\vspace{-8pt}
+\textbf{Ph.D. -- University of California, Berkeley} \\
+\textit{Materials Science \& Engineering}              \hfill  Berkeley, CA 2001--2006 
+\vspace{2pt}
+\begin{itemize} \itemsep -1pt 
+	\item Collaborated in a five year project with Alcoa, Inc. to optimize a molten aluminum purification process, with specific goals to reduce toxic chloride emissions and improve energy efficiency.
+	\item Ran fluid dynamics simulations of the purification process to assess mixing, residence time, bubble distribution to find optimum operating conditions, validating results with experimental data.
+	\item Built a bubble probe to use in motel aluminum experiments to detect capacitance change on bubble contact.
+%\item Utilized a variety of computational and data analysis tools: Femlab, FLUENT, Matlab, Mathematica, GAMBIT
+    \item Received student nominated outstanding teaching award as graduate student instructor for undergraduate materials science lab.
+\end{itemize}
+% \vspace{-10pt}
+%
+% \textbf{ M.S. -- University of California, Berkeley} \\
+% \textit{ Materials Science \& Engineering}           \hfill Berkeley, CA 1999--2001
+% \begin{itemize} \itemsep -1pt 
+% 	\item Researched and developed experimental thin films for supported liquid membranes for aqueous filtering of acetic acid.
+% 	\item Investigated processing techniques and properties of epoxy films applied to a membrane
+% surface to seal liquid extractant into pores of supporting membrane.
+% \end{itemize}
+%
+%--------------------------------------------------------------------------------
+ \vspace{4pt}
+\section{FUN FACTS ABOUT ME} 
+ \vspace{15pt}
+\begin{itemize}  \itemsep -1pt 
+	\item Traveling and checking out the world is a must! Recent trips include the Republic of Georgia, Spain, Portugal, and Colombia. 
+	\item Love to read, explore San Francisco and the Bay, ride my bike, eat well and drink well. 
+  \item Started weekly German-learning conversational group for foreigners in Leoben, Austria. Keep up with my German via social groups and classes at local community college.
+  \item Occasional sewer and creator of colorful clothes, jewelery, bags.
+	\item Past volunteer experiences: tutor for Women Who Code, high school prep classes for underprivileged kids.
+\end{itemize} 
+%---------------------------------------------------------------------------------  
+
+%-------------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------------------- 
+%\section{REFERENCES}
+% \vspace{15pt}   
+%\begin{itemize} \itemsep 2pt  
+%		\item[] Prof. Andreas Ludwig, Simulation and Modeling of Metallurgical Processes, Montanuniversit\"at Leoben, Leoben, Austria,  andreas.ludwig@mu-leoben.at, \hspace{15pt} +43 3842-402-3100  
+%	\item[] Prof. James W. Evans, Materials Science and Mineral Engineering, U.C. Berkeley, Berkeley, CA 91720, vans@berkeley.edu, 510-642-3807 
+%	\item[] Dr. Corleen Chesonis, Alcoa Inc., Alcoa Technical Center, Alcoa Center, PA 15069,  \hspace{15pt} corleen.chesonis@alcoa.com, 724-337-4794  
+%	\item[] Dr. Jaime Kruzic, School of Mechanical, Industrial, and Manufacturing Engineering, Oregon State University,	Corvallis, OR 97331, kruzicj@engr.orst.edu, 541-737-7027
+%	\item[] Dr. Scott Beckman, Materials Science and Engineering, Iowa State University, Ames, IA 50011, sbeckman@iastate.edu, 515-294-1107                         
+%\end{itemize}
+%
+\end{resume}
+\end{document}
